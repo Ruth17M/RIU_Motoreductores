@@ -1,0 +1,151 @@
+<section id="especialidad" class="seccion-negra text-center">
+
+
+
+  <!--- Columnas de productos --->
+<div class="container text-center">
+  
+
+  <h2 class="titulo-amarillo">NUESTRA ESPECIALIDAD</h2>
+  <p>Ofrecemos equipos funcionales, revisados y listos...</p>
+
+ 
+  <div class="row justify-content-center g-5">
+      <div class="col-auto">
+        <div class="card-producto" onclick="mostrarInfo('reductor')">
+      
+      <div class="card-img">
+        <img src="/img/motor 1.jpg" alt="Reductor">
+      </div>
+
+      <div class="card-info">
+        <h5>MOTOREDUCTOR</h5>
+      </div>
+
+    </div>
+      </div>
+      <div class="col-auto ">
+        <div class="card-producto" onclick="mostrarInfo('motoreductor')">
+      
+      <div class="card-img">
+        <img src="/img/motor 1.jpg" alt="Reductor">
+      </div>
+
+      <div class="card-info">
+        <h5>MOTOREDUCTOR</h5>
+      </div>
+
+    </div>
+      </div>
+      <div class="col-auto">
+        <div class="card-producto" onclick="mostrarInfo('motor')">
+      
+      <div class="card-img">
+        <img src="/img/motor 1.jpg" alt="Reductor">
+      </div>
+
+      <div class="card-info">
+        <h5>MOTOREDUCTOR</h5>
+      </div>
+
+    </div>
+      </div>
+  </div>
+
+</div>
+
+
+  <div class="container">
+
+    <!-- Aquí se despliega la info -->
+    <div id="detalleProducto" class="mt-5"></div>
+  </div>
+
+
+
+
+
+
+
+  <!--- Cards de bloques ocultos --->
+
+
+  <!--- Reductor --->
+  <div id="plantilla-reductor" class="plantilla" style="display:none;">
+  <div class="service">
+      <div class="service-img">
+          <img src="/img/fachada_4.jpg" alt="">
+      </div>
+      <div class="service-info">
+          <h3>REDUCTOR</h3>
+          <p>Información del reductor aquí...</p>
+      </div>
+  </div>
+</div>
+
+
+<!--- Motoreductor --->
+<div id="plantilla-motoreductor" class="plantilla" style="display:none;">
+  <div class="service">
+      <div class="service-img">
+          <img src="/img/motoreductor.jpg" alt="">
+      </div>
+      <div class="service-info">
+          <h3>MOTOREDUCTOR</h3>
+          <p>Información del motoreductor aquí...</p>
+      </div>
+  </div>
+</div>
+
+
+<!-- Motrores -->
+ <div id="plantilla-otro" class="plantilla" style="display:none;">
+  <div class="service">
+      <div class="service-img">
+          <img src="/img/otro.jpg" alt="">
+      </div>
+      <div class="service-info">
+          <h3>OTRO PRODUCTO</h3>
+          <p>Información del producto aquí...</p>
+      </div>
+  </div>
+</div>
+
+
+  
+</section>
+
+
+<section>
+  <div class="seccion-negra"></div>
+  <div class="hero-parallax"></div>
+</section>
+
+
+
+<script>
+function mostrarInfo(card){
+  document.querySelectorAll('.card-producto').forEach(c => c.classList.remove('activa'));
+  card.classList.add('activa');
+}
+
+
+function mostrarInfo(tipo){
+
+    // Quitar selección previa
+    document.querySelectorAll('.card-producto')
+        .forEach(c => c.classList.remove('activa'));
+
+    // Activar la card clickeada
+    event.currentTarget.classList.add('activa');
+
+    // Obtener la plantilla correcta
+    const plantilla = document.getElementById('plantilla-' + tipo).innerHTML;
+
+    // Mostrarla abajo
+    document.getElementById('detalleProducto').innerHTML = plantilla;
+}
+
+</script>
+
+

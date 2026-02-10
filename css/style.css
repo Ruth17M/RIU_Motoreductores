@@ -1,0 +1,267 @@
+body {
+  background: #000;
+  color: white;
+  font-family: sans-serif;
+}
+
+.seccion-negra {
+  padding: 100px 0;
+  background: #000;
+}
+
+.titulo-amarillo {
+  color: #ffc107;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+
+
+
+/*INICIO*/
+
+/* CONTENEDOR DE CADA TARJETA */
+.card-producto{
+  width: 320px;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+/* IMAGEN */
+.card-img img{
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  display: block;
+}
+
+/* BLOQUE NEGRO */
+.card-info{
+  background: #000;
+  border: 4px solid #fff;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+  margin-top: -40px;
+}
+
+/* TEXTO */
+.card-info h5{
+  color: #fff;
+  font-size: 28px;
+  letter-spacing: 4px;
+  margin: 0;
+  transition: 0.4s;
+}
+
+/* HOVER */
+.card-producto:hover .card-info{
+  border-color: #f5c400;
+}
+
+.card-producto:hover .card-info h5{
+  color: #f5c400;
+}
+
+/* ACTIVA */
+.card-producto.activa .card-info{
+  border-color: #f5c400;
+}
+
+.card-producto.activa .card-info h5{
+  color: #f5c400;
+}
+
+
+
+/*FIN*/
+
+
+/*
+#detalleProducto {
+  background: #111;
+  padding: 40px;
+  border-left: 5px solid #ffc107;
+}
+*/
+
+
+
+.service{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.service-img img{
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Alterna solo */
+.service:nth-child(even) .service-img{
+    order: 2;
+}
+
+.service-info h3{
+    font-size: 32px;
+}
+
+.service-info p{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/*HERO*/
+/* HERO NEGRO */
+.hero-section{
+  position: relative;
+  height: 65vh;
+  background: #000;
+  padding-top:120px;
+}
+
+/* LOGO */
+.hero-logo{
+  position:absolute;
+  left:6%;
+  top:6%;
+  z-index:3;
+}
+
+.hero-logo img{
+  width:600px;
+  max-width:90%;
+  filter: drop-shadow(0 30px 35px rgba(0,0,0,0.7));
+}
+
+/* FORM AMARILLO */
+.hero-form{
+  position:absolute;
+  top:25%;
+  left:40%;
+  padding:70px 60px;
+  background:#f5c400;
+}
+
+
+.hero-form h2{
+  text-align:center;
+  color:#000000;
+  font-weight:500;
+  margin-bottom:50px;
+}
+
+.hero-form input,
+.hero-form textarea{
+  width:100%;
+  background:transparent;
+  border:none;
+  border-bottom:3px solid #000;
+  margin-bottom:35px;
+  padding:10px;
+  font-size:18px;
+}
+
+.hero-form textarea{
+  height:110px;
+  resize:none;
+}
+
+.hero-form input:focus,
+.hero-form textarea:focus{
+  outline: none;
+  box-shadow: none;
+  border-bottom: 3px solid #000;
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+
+
+.hero-form button{
+  width:100%;
+  padding:16px;
+  background:#000;
+  color:#fff;
+  border:none;
+  font-size:18px;
+}
+
+/* HOVER industrial elegante */
+.hero-form button:hover{
+  background:#1a1a1a;              /* negro más claro */
+  transform: translateY(-3px);     /* se levanta */
+  box-shadow: 0 12px 25px rgba(0,0,0,0.45);
+}
+
+/* CLICK (efecto presión) */
+.hero-form button:active{
+  transform: translateY(0);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.35);
+}
+
+
+/* PARALLAX — SECCIÓN APARTE */
+.hero-parallax{
+  height:45vh;
+  background-image: url('/img/motores-reductores-motoreductos-riu-el-pollo.webp');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 992px){
+  .hero-section{
+    height:auto;
+    padding-bottom:60px;
+  }
+
+  .hero-logo,
+  .hero-form{
+    position:relative;
+    width:90%;
+    margin:40px auto;
+    top:0;
+    left:0;
+    right:0;
+  }
+}
+
+/* QUIENES */
+.quienes-section {
+  background: #000;
+  padding: 100px 0;
+}
+
+.quienes-box {
+  background: #ffc107;
+  color: black;
+  padding: 40px;
+  font-size: 18px;
+}
+
+/* CONTACTO */
+.contacto-section {
+  background: white;
+  color: black;
+}
+
+.wave {
+  height: 80px;
+  background: black;
+  border-bottom-left-radius: 50% 40px;
+  border-bottom-right-radius: 50% 40px;
+}
+
