@@ -213,7 +213,7 @@ body {
 /* PARALLAX — SECCIÓN APARTE */
 .hero-parallax{
   height:45vh;
-  background-image: url('img/motores-reductores-motoreductos-riu-el-pollo.webp');
+  background-image: url('/img/motores-reductores-motoreductos-riu-el-pollo.webp');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
