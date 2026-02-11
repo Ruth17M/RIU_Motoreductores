@@ -358,3 +358,14 @@ input{
   color: #dfb439;
 }
 
+
+
+/* PARALLAX — SECCIÓN APARTE */
+.parallax{
+  height:45vh;
+  background-image: url('/img/reductores_motores_usados_RUI_banner.JPG');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
