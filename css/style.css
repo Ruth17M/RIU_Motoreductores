@@ -8,12 +8,8 @@ body {
   background-color: #E6E6E6 !important; 
 }
 
-.color1{
-  color: black !important;
-}
-
 .seccion-negra {
-  padding: 100px 0;
+  padding: 150px 0;
   background: #E6E6E6;
 }
 
@@ -66,16 +62,16 @@ body {
 
 /* HOVER */
 .card-producto:hover .card-info{
-  border-color: #f5c400;
+  border-color: #dfb439;
 }
 
 .card-producto:hover .card-info h5{
-  color: #f5c400;
+  color: #dfb439;
 }
 
 /* ACTIVA */
 .card-producto.activa .card-info{
-  border-color: #f5c400;
+  border-color: #dfb439;
 }
 
 .card-producto.activa .card-info h5{
@@ -115,19 +111,26 @@ body {
 
 /*HERO*/
 /* HERO NEGRO */
+
+
+.hero-wrapper{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:60px;
+  flex-wrap:wrap;
+}
+
 .hero-section{
   position: relative;
-  height: 65vh;
   background: #E6E6E6;
-  padding-top:120px;
+  padding: 80px 0;
 }
 
 /* LOGO */
 .hero-logo{
-  position:absolute;
-  left:6%;
-  top:6%;
-  z-index:3;
+  width: 520px;
+  max-width: 100%;
 }
 
 .hero-logo img{
@@ -138,11 +141,10 @@ body {
 
 /* FORM AMARILLO */
 .hero-form{
-  position:absolute;
-  top:25%;
-  left:40%;
-  padding:70px 60px;
+  padding:60px;
   background:#262262;
+  max-width: 520px;
+  width: 100%;
 }
 
 
@@ -214,7 +216,7 @@ body {
 
 
 /* RESPONSIVE */
-@media (max-width: 992px){
+@media (max-width: 992px){ 
   .hero-section{
     height:auto;
     padding-bottom:60px;
@@ -222,12 +224,14 @@ body {
 
   .hero-logo,
   .hero-form{
-    position:relative;
+    position:relative; /*aqui*/
     width:90%;
     margin:40px auto;
     top:0;
     left:0;
     right:0;
+
+    transform: none;
   }
 }
 
@@ -251,3 +255,21 @@ body {
 }
 
 
+
+
+  /*boton whatssap*/
+  #botonWhatsApp {
+    position: fixed;
+    z-index: 1000;
+    bottom: 20px;
+    right: 15px;
+    width: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  #botonWhatsApp {
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+  }
+}
