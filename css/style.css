@@ -8,6 +8,15 @@ body {
   background-color: #E6E6E6 !important; 
 }
 
+textarea{
+  color:white;
+}
+
+input{
+  color:white;
+}
+
+
 .seccion-negra {
   padding: 150px 0;
   background: #E6E6E6;
@@ -273,3 +282,79 @@ body {
       margin: 10px;
   }
 }
+
+
+/*SERVICIOS*/
+
+.services-section {
+  padding-top:20px;
+  background-color: #E6E6E6; 
+  text-align: center;
+}
+
+.services-content{
+  margin: 0 auto; 
+}
+
+.services-section h2 {
+  font-size: 36px;
+  color: #000000;
+  margin-bottom: 40px; 
+  margin-top: 40px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.service-item:last-child {
+  border-bottom: none; 
+}
+
+
+.service-item img {
+  width: 50%; 
+  height: 250px; 
+  object-fit: cover; 
+  margin-left: -20px;
+  
+}
+
+.service-content {
+  width: 50%; 
+  text-align: left;
+  padding-left: 20px;
+}
+
+
+.service-content h3 {
+  font-size: 28px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.service-content p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.service-content .contact-btn {
+  padding: 10px 20px;
+  background-color: #dfb439; 
+  color: #FFF;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px; 
+  font-weight: bold;
+}
+
+.service-content .contact-btn:hover {
+  background-color: #FFF; 
+  color: #dfb439;
+}
+

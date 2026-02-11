@@ -12,7 +12,7 @@
  
   <div class="row justify-content-center g-5">
       <div class="col-auto">
-        <div class="card-producto" onclick="mostrarInfo('reductor')">
+        <div class="card-producto" data-tipo="reductor">
       
       <div class="card-img">
         <img src="img/motor 1.jpg" alt="Reductor">
@@ -25,7 +25,7 @@
     </div>
       </div>
       <div class="col-auto ">
-        <div class="card-producto" onclick="mostrarInfo('motoreductor')">
+        <div class="card-producto" data-tipo="motoreductor">
       
       <div class="card-img">
         <img src="img/motor 1.jpg" alt="Reductor">
@@ -38,7 +38,7 @@
     </div>
       </div>
       <div class="col-auto">
-        <div class="card-producto" onclick="mostrarInfo('motor')">
+        <div class="card-producto" data-tipo="motor">
       
       <div class="card-img">
         <img src="img/motor 1.jpg" alt="Reductor">
@@ -57,6 +57,8 @@
 </div>
 
 
+
+
   <div class="container">
 
     <!-- Aquí se despliega la info -->
@@ -65,54 +67,115 @@
 
 
 
+<!-- prueba reductor -->
+
+<!-- Nueva sección: Nuestros Servicios -->
+        <div id="tpl-reductor" class="services-section d-none">
+            <div class="services-content">
+                <h2 data-aos="fade-right" data-aos-duration="3000" >Motores</h2>
+                
+                <div class="service-item">
+                    <img src="img/motor 1.jpg" alt="Corte plasma GLCONSTRUCCION" class="">
+                    <div class="service-content" data-aos="fade-up" data-aos-duration="2500">
+                        <h3>
+                            Corona sin fin y
+                        </h3>
+                        <p>Diferentes capacidades y tipos</p>
+                        <button class="contact-btn" onclick="enviarWhatsApp()">Más información</button>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-content" data-aos="fade-up" data-aos-duration="2500">
+                        <h3 style=" font-size: 28px;
+                      color: #333;
+                      margin: 10px 0;">
+                           Engranes
+                        </h3>
+                        <p style=" font-size: 18px;
+                      color: #666;
+                      text-align: start;">Diferentes capacidades y tipos</p>
+                        <button class="contact-btn" onclick="enviarWhatsApp()">Más información</button>
+                    </div>
+                    <img src="img/motor 1.jpg" alt="Servicio rolado de placa GLCONSTRUCCION" class="">
+    
+                </div>
+            </div>
+        </div>
+<!---fin-->
+
+<!-- Nueva sección: Nuestros Servicios -->
+        <div id="tpl-motoreductor" class="services-section d-none">
+            <div class="services-content">
+                <h2 data-aos="fade-right" data-aos-duration="3000" >Motores</h2>
+                
+                <div class="service-item">
+                    <img src="img/motor 1.jpg" alt="Corte plasma GLCONSTRUCCION" class="">
+                    <div class="service-content" data-aos="fade-up" data-aos-duration="2500">
+                        <h3>
+                            Corona sin fin y
+                        </h3>
+                        <p>Diferentes capacidades y tipos</p>
+                        <button class="contact-btn" onclick="enviarWhatsApp()">Más información</button>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-content" data-aos="fade-up" data-aos-duration="2500">
+                        <h3 style=" font-size: 28px;
+                      color: #333;
+                      margin: 10px 0;">
+                           Engranes
+                        </h3>
+                        <p style=" font-size: 18px;
+                      color: #666;
+                      text-align: start;">Diferentes capacidades y tipos</p>
+                        <button class="contact-btn" onclick="enviarWhatsApp()">Más información</button>
+                    </div>
+                    <img src="img/motor 1.jpg" alt="Servicio rolado de placa GLCONSTRUCCION" class="">
+    
+                </div>
+            </div>
+        </div>
+<!---fin-->
+
+
+<!-- Nueva sección: Nuestros Servicios -->
+        <div id="tpl-motor" class="services-section d-none">
+            <div class="services-content">
+                <h2 data-aos="fade-right" data-aos-duration="3000" >Motores</h2>
+                
+                <div class="service-item">
+                    <img src="img/motor 1.jpg" alt="Corte plasma GLCONSTRUCCION" class="">
+                    <div class="service-content" data-aos="fade-up" data-aos-duration="2500">
+                        <h3>
+                            Corona sin fin y
+                        </h3>
+                        <p>Diferentes capacidades y tipos</p>
+                        <button class="contact-btn" onclick="enviarWhatsApp()">Más información</button>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-content" data-aos="fade-up" data-aos-duration="2500">
+                        <h3 style=" font-size: 28px;
+                      color: #333;
+                      margin: 10px 0;">
+                           Engranes
+                        </h3>
+                        <p style=" font-size: 18px;
+                      color: #666;
+                      text-align: start;">Diferentes capacidades y tipos</p>
+                        <button class="contact-btn" onclick="enviarWhatsApp()">Más información</button>
+                    </div>
+                    <img src="img/motor 1.jpg" alt="Servicio rolado de placa GLCONSTRUCCION" class="">
+    
+                </div>
+            </div>
+        </div>
+<!---fin-->
 
 
 
 
-  <!--- Cards de bloques ocultos --->
 
-
-  <!--- Reductor --->
-  <div id="plantilla-reductor" class="plantilla" style="display:none;">
-  <div class="service">
-      <div class="service-img">
-          <img src="img/fachada_4.jpg" alt="">
-      </div>
-      <div class="service-info">
-          <h3>REDUCTOR</h3>
-          <p>Información del reductor aquí...</p>
-     
-      </div>
-  </div>
-</div>
-
-
-<!--- Motoreductor --->
-<div id="plantilla-motoreductor" class="plantilla" style="display:none;">
-  <div class="service">
-      <div class="service-img">
-          <img src="img/motoreductor.jpg" alt="">
-      </div>
-      <div class="service-info">
-          <h3>MOTOREDUCTOR</h3>
-          
-      </div>
-  </div>
-</div>
-
-
-<!-- Motrores -->
- <div id="plantilla-otro" class="plantilla" style="display:none;">
-  <div class="service">
-      <div class="service-img">
-          <img src="img/otro.jpg" alt="">
-      </div>
-      <div class="service-info">
-          <h3>OTRO PRODUCTO</h3>
-          <p>Información del producto aquí...</p>
-      </div>
-  </div>
-</div>
 
 
   
@@ -120,35 +183,9 @@
 
 
 <section>
-  <div class="seccion-negra"></div>
   <div class="hero-parallax"></div>
 </section>
 
 
-
-<script>
-function mostrarInfo(card){
-  document.querySelectorAll('.card-producto').forEach(c => c.classList.remove('activa'));
-  card.classList.add('activa');
-}
-
-
-function mostrarInfo(tipo){
-
-    // Quitar selección previa
-    document.querySelectorAll('.card-producto')
-        .forEach(c => c.classList.remove('activa'));
-
-    // Activar la card clickeada
-    event.currentTarget.classList.add('activa');
-
-    // Obtener la plantilla correcta
-    const plantilla = document.getElementById('plantilla-' + tipo).innerHTML;
-
-    // Mostrarla abajo
-    document.getElementById('detalleProducto').innerHTML = plantilla;
-}
-
-</script>
 
 
